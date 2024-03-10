@@ -2,6 +2,8 @@
 
 I'm glad to introduce you our new team-project for educational purposes.
 [Here you can find design.](https://www.figma.com/file/vNu2iCT7IRk0iLIqVFRPiC/Macaron-shop-(Copy)?type=design&node-id=218-478&mode=design&t=09w9fwqS8lNunhgl-0)
+[Here is code rules](https://github.com/ryanmcdermott/clean-code-javascript)
+[And commit rules](https://www.conventionalcommits.org/en/v1.0.0/)
 
 
 
