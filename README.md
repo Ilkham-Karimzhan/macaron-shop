@@ -19,5 +19,5 @@
 
 ### Commit rules
 
-<p>Firstly, check ***previos link*** for base. Your main branch is **dev**. If you want to add new feature, you have to create new branch with name MAC-[your branch codee].</p>
+<p>Firstly, check ***previos link*** for base. Your main branch is **dev**. If you want to add new feature, you have to create new branch with name MAC-[your branch codee]. Then, push your changes and create merge request, but **don't close it**! Code have to be reviewed first.</p>
 <p>Example: MAC-01 feat(button): implement new component</p>
