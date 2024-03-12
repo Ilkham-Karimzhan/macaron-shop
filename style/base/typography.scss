@@ -1,84 +1,93 @@
-
-// <style>
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
-// </style>
 @font-face {
-   font-family: 'Proxima Nova';
-   src: url('font\proximanova_regular.ttf');
+   font-family: 'Montserrat';
+   src: url('./font/Montserrat-SemiBold.woff') format('woff')
    }
+@font-face {
+      font-family: 'Montserrat';
+      src: url('./font/Montserrat-SemiBold.woff2') format('woff2')
+   }
+@font-face {
+      font-family: 'Proxima Nova';
+      src: url('./font/Proxima-Nova-Regular.woff') format('woff')
+   }
+@font-face {
+      font-family: 'Proxima Nova';
+      src: url('./font/Proxima-Nova-Regular.woff2') format('woff2')
+   }
+
 .header-01{
    font-family: Montserrat;
    width: 600;
    line-height: 37px;  
-   color: #292929;
+   color: $black-100;
 }
 .header-02{
    font-family: Proxima Nova;
    width: 400;
    font-size: 18px;
    line-height: 22px;
-   color: #292929;
+   color: $black-100;
 }
 .header-text{
    font-family: Proxima Nova;
    width: 400;
    font-size: 14px;
    line-height: 17px;
-   color:#2B1414;
+   color:$font-chocolate;
 }
-.stock-title1{
+.stock-title-1{
    font-family: Proxima Nova;
    width: 600;
    font-size: 16px;
    line-height: 20px;
-   color:#FFFFFF;
+   color:$white;
 }
-.stock-title2{
+.stock-title-2{
    font-family: Montserrat;
    width: 600;
    font-size: 14px;
    line-height: 17px;
-   color:#FFFFFF;
+   color:$white;
 }
 .stock-text{
    font-family: Montserrat;
    width: 600;
    font-size: 18px;
    line-height: 22px;
-   color: #FFFFFF;
+   color: $white;
 }
 .main-text{
    font-family: Montserrat;
    width: 600;
    font-size: 16px;
    line-height: 20px;
-   color: #292929;
+   color: $black-100;
 }
 .cart-title{
    font-family: Montserrat;
    width: 600;
    font-size: 20px;
    line-height: 24px;
-   color: #292929;
+   color: $black-100;
 }
 .cart-text{
    font-family: Proxima Nova;
    width: 400;
    font-size: 16px;
    line-height: 20px;
-   color: #292929;
+   color: $black-100;
 }
 .footer-title{
    font-family: Proxima Nova;
    width: 600;
    font-size: 16px;
    line-height: 20px;
-   color:#292929;
+   color:$black-100;
 }
 .footer-text{
    font-family: Proxima Nova;
    width: 400;
    font-size: 14px;
    line-height: 17px;
-   color: #292929;
+   color: $black-100;
 }
