@@ -1,0 +1,19 @@
+.btn{
+    padding: 15px 38px;
+    border: none;
+    &-default {
+        background-color: $font-crimson-100;
+        border-radius: 3px;
+        color: $font-white;
+        transition: all 0.3s;
+        &:hover {
+            background-color: darken($color: $font-crimson-100, $amount: 25);
+            transform: scale(1.05);
+        }
+    }
+    &-outline {
+        background-color: transparent;
+        color: $font-crimson-100;
+        border: 1px solid $font-crimson-100;
+    }
+}
