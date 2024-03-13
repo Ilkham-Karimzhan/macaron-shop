@@ -6,14 +6,26 @@
         border-radius: 3px;
         color: $font-white;
         transition: all 0.3s;
-        &:hover {
-            background-color: darken($color: $font-crimson-100, $amount: 25);
-            transform: scale(1.05);
-        }
     }
     &-outline {
         background-color: transparent;
         color: $font-crimson-100;
         border: 1px solid $font-crimson-100;
+    }
+    &-icon{
+        padding-right: 11px;
+        background-color: white;
+        padding: 15px 25px;
+        display: flex;
+    }
+    &-icon svg{
+        align-self: center;
+        padding-right: 15px;
+    }
+    &-border{
+        border: 1px solid $blue-100;
+        border-radius: 3px;
+        color: $black-100;
+        background-color: transparent;
     }
 }
