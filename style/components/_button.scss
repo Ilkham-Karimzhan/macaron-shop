@@ -1,28 +1,57 @@
-.btn{
-    padding: 15px 38px;
-    border: none;
-    &-default {
-        background-color: $font-crimson-100;
-        border-radius: 3px;
-        color: $font-white;
-        transition: all 0.3s;
-        &:hover {
+.btn {
+   padding: 15px 38px;
+   border: none;
+
+   &-default {
+      background-color: $font-crimson-100;
+      border-radius: 3px;
+      color: $font-white;
+      transition: all 0.3s;
+
+      &:hover {
+         background-color: darken($color: $font-crimson-100, $amount: 25);
+         transform: scale(1.05);
+      }
+   }
+
+   &-outline {
+      background-color: transparent;
+      color: $font-crimson-100;
+      border: 1px solid $font-crimson-100;
+   }
+
+   .btn {
+      padding: 15px 38px;
+      border: none;
+
+      &-default {
+         background-color: $font-crimson-100;
+         border-radius: 3px;
+         color: $font-white;
+         transition: all 0.3s;
+
+         &:hover {
             background-color: $crimson-300;
-        }
-    }
-    &-outline {
-        border-radius: 3px;
-        background-color: transparent;
-        color: $font-crimson-100;
-        border: 1px solid $font-crimson-100;
-        transition: all 0.3s;
-        &:hover {
+         }
+      }
+
+      &-outline {
+         border-radius: 3px;
+         background-color: transparent;
+         color: $font-crimson-100;
+         border: 1px solid $font-crimson-100;
+         transition: all 0.3s;
+
+         &:hover {
             background-color: $font-crimson-100;
             color: $font-white;
-        }
-        padding: 14px 38px;
-    }
-    &-custom{
-        background-color: black;
-    }
+         }
+
+         padding: 14px 38px;
+      }
+
+      &-custom {
+         background-color: black;
+      }
+   }
 }
