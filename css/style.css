@@ -447,6 +447,12 @@ body {
   color: #292929;
 }
 
+.input {
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
 .btn {
   padding: 15px 38px;
   border: none;
