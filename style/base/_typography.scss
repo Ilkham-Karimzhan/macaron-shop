@@ -1,90 +1,112 @@
 @font-face {
    font-family: 'Montserrat';
-   src: url('./font/Montserrat-SemiBold.woff') format('woff')
-   }
-@font-face {
-      font-family: 'Montserrat';
-      src: url('./font/Montserrat-SemiBold.woff2') format('woff2')
-   }
-@font-face {
-      font-family: 'Proxima Nova';
-      src: url('./font/Proxima-Nova-Regular.woff') format('woff')
-   }
-@font-face {
-      font-family: 'Proxima Nova';
-      src: url('./font/Proxima-Nova-Regular.woff2') format('woff2')
-   }
+   src: url('./font/Montserrat-SemiBold.woff') format('woff');
+   font-style: normal;
+   font-weight: normal;
+}
 
-.header-01{
+@font-face {
+   font-family: 'Montserrat';
+   src: url('./font/Montserrat-SemiBold.woff2') format('woff2');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Proxima Nova';
+   src: url('./font/Proxima-Nova-Regular.woff') format('woff');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Proxima Nova';
+   src: url('./font/Proxima-Nova-Regular.woff2') format('woff2');
+   font-style: normal;
+   font-weight: normal;
+}
+
+
+.header-01 {
    font-family: Montserrat;
    font-weight: 600;
-   line-height: 37px;  
+   line-height: 37px;
    color: $black-100;
 }
-.header-02{
+
+.header-02 {
    font-family: Proxima Nova;
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
    color: $black-100;
 }
-.header-text{
+
+.header-text {
    font-family: Proxima Nova;
    font-weight: 400;
    font-size: 14px;
    line-height: 17px;
-   color:$font-chocolate;
+   color: $font-chocolate;
 }
-.stock-title-1{
+
+.stock-title-1 {
    font-family: Proxima Nova;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
-   color:$font-white;
+   color: $font-white;
 }
-.stock-title-2{
+
+.stock-title-2 {
    font-family: Montserrat;
    font-weight: 600;
    font-size: 14px;
    line-height: 17px;
-   color:$font-white;
+   color: $font-white;
 }
-.stock-text{
+
+.stock-text {
    font-family: Montserrat;
    font-weight: 600;
    font-size: 18px;
    line-height: 22px;
    color: $font-white;
 }
-.main-text{
+
+.main-text {
    font-family: Montserrat;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
    color: $black-100;
 }
-.cart-title{
+
+.cart-title {
    font-family: Montserrat;
    font-weight: 600;
    font-size: 20px;
    line-height: 24px;
    color: $black-100;
 }
-.cart-text{
+
+.cart-text {
    font-family: Proxima Nova;
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
    color: $black-100;
 }
-.footer-title{
+
+.footer-title {
    font-family: Proxima Nova;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
-   color:$black-100;
+   color: $black-100;
 }
-.footer-text{
+
+.footer-text {
    font-family: Proxima Nova;
    font-weight: 400;
    font-size: 14px;
