@@ -333,19 +333,39 @@ template {
   }
 }
 @font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
   font-family: "Proxima Nova";
-  src: url("fontproximanova_regular.ttf");
+  src: url("./font/Proxima-Nova-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./font/Proxima-Nova-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
 }
 .header-01 {
   font-family: Montserrat;
-  width: 600;
+  font-weight: 600;
   line-height: 37px;
   color: #292929;
 }
 
 .header-02 {
   font-family: Proxima Nova;
-  width: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #292929;
@@ -353,39 +373,39 @@ template {
 
 .header-text {
   font-family: Proxima Nova;
-  width: 400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #2B1414;
+  color: #2b1414;
 }
 
-.stock-title1 {
+.stock-title-1 {
   font-family: Proxima Nova;
-  width: 600;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.stock-title2 {
+.stock-title-2 {
   font-family: Montserrat;
-  width: 600;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock-text {
   font-family: Montserrat;
-  width: 600;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-text {
   font-family: Montserrat;
-  width: 600;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #292929;
@@ -393,7 +413,7 @@ template {
 
 .cart-title {
   font-family: Montserrat;
-  width: 600;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #292929;
@@ -401,7 +421,7 @@ template {
 
 .cart-text {
   font-family: Proxima Nova;
-  width: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #292929;
@@ -409,7 +429,7 @@ template {
 
 .footer-title {
   font-family: Proxima Nova;
-  width: 600;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #292929;
@@ -417,7 +437,7 @@ template {
 
 .footer-text {
   font-family: Proxima Nova;
-  width: 400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #292929;
@@ -441,4 +461,4 @@ template {
   background-color: transparent;
   color: #e7426a;
   border: 1px solid #e7426a;
-}/*# sourceMappingURL=style.css.map */
+}
