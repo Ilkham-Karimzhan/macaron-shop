@@ -345,6 +345,10 @@ template {
   font-style: normal;
   font-weight: normal;
 }
+body {
+  font-family: Montserrat;
+}
+
 .header-01 {
   font-family: Montserrat;
   font-weight: 600;
@@ -450,6 +454,34 @@ template {
   background-color: transparent;
   color: #e7426a;
   border: 1px solid #e7426a;
+}
+.btn .btn {
+  padding: 15px 38px;
+  border: none;
+}
+.btn .btn-default {
+  background-color: #e7426a;
+  border-radius: 3px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn .btn-default:hover {
+  background-color: #F45D82;
+}
+.btn .btn-outline {
+  border-radius: 3px;
+  background-color: transparent;
+  color: #e7426a;
+  border: 1px solid #e7426a;
+  transition: all 0.3s;
+  padding: 14px 38px;
+}
+.btn .btn-outline:hover {
+  background-color: #e7426a;
+  color: #ffffff;
+}
+.btn .btn-custom {
+  background-color: black;
 }
 
 /* Customize the label (the container) */
