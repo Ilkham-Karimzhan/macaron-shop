@@ -1,11 +1,3 @@
-function check(state) {
-  if (state == 'true') {
-    return 'disabled';
-  } else {
-    return '';
-  }
-}
-
 customElements.define(
   'mac-checkbox',
   class MacCheckbox extends HTMLElement {
