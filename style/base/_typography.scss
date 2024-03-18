@@ -1,5 +1,5 @@
 @font-face {
-   font-family: 'Montserrat';
+   font-family: 'Montserrat', sans-serif;
    src: url("../base/font/Montserrat-SemiBold.ttf") format("ttf");
    font-style: normal;
    font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-   font-family: 'Proxima Nova';
+   font-family: 'Proxima Nova', sans-serif;
    src: url("../base/font/Proxima-Nova-Reg.ttf") format('ttf');
    font-style: normal;
    font-weight: normal;
@@ -16,18 +16,18 @@
 }
 
 body {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .header-01 {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    line-height: 37px;
    color: $black-100;
 }
 
 .header-02 {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
@@ -35,7 +35,7 @@ body {
 }
 
 .header-text {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 400;
    font-size: 14px;
    line-height: 17px;
@@ -43,7 +43,7 @@ body {
 }
 
 .stock-title-1 {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
@@ -51,7 +51,7 @@ body {
 }
 
 .stock-title-2 {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 14px;
    line-height: 17px;
@@ -59,7 +59,7 @@ body {
 }
 
 .stock-text {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 18px;
    line-height: 22px;
@@ -67,7 +67,7 @@ body {
 }
 
 .main-text {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
@@ -75,7 +75,7 @@ body {
 }
 
 .cart-title {
-   font-family: Montserrat;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 20px;
    line-height: 24px;
@@ -83,7 +83,7 @@ body {
 }
 
 .cart-text {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
@@ -91,7 +91,7 @@ body {
 }
 
 .footer-title {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
@@ -99,7 +99,7 @@ body {
 }
 
 .footer-text {
-   font-family: Proxima Nova;
+   font-family: 'Proxima Nova', sans-serif;
    font-weight: 400;
    font-size: 14px;
    line-height: 17px;
