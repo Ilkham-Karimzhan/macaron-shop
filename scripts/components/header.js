@@ -43,9 +43,35 @@ customElements.define('mac-header', class MacButton extends HTMLElement { // com
 				  </div>
 				</div>
 			  </div>
-			  <div class="mac-header__bottom"></div>
-			</div>
-	 	 </header>
+			  <div class="header__bottom">
+            <div class="header__bottom-container container">
+            <nav>
+              <ul class="header__bottom-menu">
+                <li class="header__bottom-item"><a href="#"><div>СЛАДКИЕ ДНИ</div><span>%</span></a></li>
+                <li class="header__bottom-dropdown">
+                  <ul>
+                    <li><a href="#"><div>подарочные наборы</div></a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item"><a href="#"><div>Собрать набор</div></a></li>
+                <li class="header__bottom-icon"><a href="#"><img src="./assets/icon/1.svg" alt="" srcset=""></a></li>
+                <li class="header__bottom-item"><a href="#"><div>Создать дизайн</div></a></li>
+                <li class="header__bottom-dropdown">
+                  <ul>
+                    <li><a href="#"><div>КОМПАНИЯМ</div></a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-dropdown">
+                  <ul>
+                    <li><a href="#"><div>ВЕСЬ КАТАЛОГ</div></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+		</div>
+	  </header>
 		`
 	}
 });
