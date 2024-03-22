@@ -334,30 +334,32 @@ template {
   }
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("../base/font/Montserrat-SemiBold.ttf") format("ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   src: url("../base/font/Proxima-Nova-Reg.ttf") format("ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 body {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header-01 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 37px;
   color: #292929;
 }
 
 .header-02 {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -365,7 +367,7 @@ body {
 }
 
 .header-text {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -373,7 +375,7 @@ body {
 }
 
 .stock-title-1 {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -381,7 +383,7 @@ body {
 }
 
 .stock-title-2 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -389,7 +391,7 @@ body {
 }
 
 .stock-text {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -397,7 +399,7 @@ body {
 }
 
 .main-text {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -405,7 +407,7 @@ body {
 }
 
 .cart-title {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -413,7 +415,7 @@ body {
 }
 
 .cart-text {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -421,7 +423,7 @@ body {
 }
 
 .footer-title {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -429,7 +431,7 @@ body {
 }
 
 .footer-text {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -545,9 +547,64 @@ body {
   display: none;
 }
 
+/* Стили для контейнера */
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  /* Стили при наведении */
+}
+.custom-radio:hover .radio-button {
+  background-color: #ECEEF1;
+}
+
+/* Стили для радио кнопки */
+.radio-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(41, 41, 41, 0.1019607843);
+}
+
+input {
+  /* Стили при активации */
+  /* Стили для disabled состояния */
+  /* Группировка radio buttons */
+}
+input[type=radio]:checked + .radio-button {
+  background-color: #ffffff;
+  border-color: rgba(41, 41, 41, 0.1019607843);
+  /* Добавляем индикатор */
+  position: relative;
+}
+input[type=radio]:checked + .radio-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e7426a;
+}
+input[type=radio]:disabled + .radio-button {
+  background-color: #F7F7F7;
+  border-color: #F7F7F7;
+  cursor: not-allowed;
+}
+input[name=radioGroup] {
+  display: none;
+}
+
 .header {
   position: fixed;
   width: 100%;
+  font-size: 14px;
+  font-family: Proxima-Nova, sans-serif;
 }
 .header__upper {
   padding: 16px 0px;
@@ -558,9 +615,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__upper-menu {
+  display: flex;
+  align-items: center;
+}
 .header__upper-menu ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
   display: flex;
   gap: 14px;
 }
@@ -570,14 +632,145 @@ body {
 }
 .header__upper-info {
   display: flex;
+  gap: 30px;
 }
 .header__upper-info__item-dropdown, .header__upper-info__item {
   display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__upper-info__item-dropdown ul, .header__upper-info__item ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+}
+.header__upper-info__item-dropdown li, .header__upper-info__item li {
+  list-style-type: none;
+}
+.header__upper-info__item-dropdown {
+  cursor: pointer;
 }
 .header__upper-info__item-dropdown ul {
+  position: relative;
+}
+.header__upper-info__item-dropdown ul::after {
+  content: "";
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  color: black;
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  right: -15px;
+  bottom: 6.5px;
+  font-weight: 700;
+  transform: rotate(45deg);
+}
+.header__upper-info__shop {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header__upper-info__shop div {
+  display: inline-block;
+  position: relative;
+}
+.header__upper-info__shop div::after {
+  position: absolute;
+  display: block;
+  border-radius: 100%;
+  background-color: black;
+  width: 13px;
+  height: 13px;
+  z-index: 2;
+  bottom: 0;
+  right: -5px;
+  content: "4";
+  color: white;
+  font-size: 10px;
+  font-family: Proxima-Nova, sans-serif;
+  margin: 0px auto;
+  text-align: center;
+}
+.header__bottom {
+  margin-top: 18px;
+}
+.header__bottom ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.header__upper-info__item-dropdown li {
-  list-style-type: none;
+.header__bottom a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Proxima-Nova, sans-serif;
+  color: #292929;
+  font-size: 14px;
+}
+.header__bottom span {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 9px;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.header__bottom span::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -30%;
+  top: -10%;
+  background-color: #ff4d6d;
+  z-index: -1;
+  border-radius: 100%;
+}
+.header__bottom-container {
+  margin: 0px auto;
+}
+.header__bottom-menu {
+  display: flex;
+  margin: 0px auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.header__bottom-dropdown ul {
+  position: relative;
+}
+.header__bottom-dropdown ul::before {
+  content: "";
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  color: black;
+  position: absolute;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  right: -15px;
+  bottom: 8px;
+  font-weight: 700;
+  transform: rotate(45deg);
+}
+.header__bottom-item div, .header__bottom-dropdown div {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.header__bottom-item div::after, .header__bottom-dropdown div::after {
+  transition: all 0.3s ease;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+}
+.header__bottom-item div:hover::after, .header__bottom-dropdown div:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  display: block;
+  background-color: #F45D82;
 }

@@ -1,0 +1,57 @@
+/* Стили для контейнера */
+.custom-radio {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+
+   /* Стили при наведении */
+   &:hover .radio-button {
+      background-color: $gray-200;
+   }
+}
+
+/* Стили для радио кнопки */
+.radio-button {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: $font-white;
+   border: 1px solid $black-light;
+}
+
+input {
+   /* Стили при активации */
+   &[type="radio"]:checked+.radio-button {
+      background-color: $font-white;
+      border-color: $black-light;
+   
+      /* Добавляем индикатор */
+      position: relative;
+   
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background-color: $font-crimson-100;
+      }
+   }
+
+   /* Стили для disabled состояния */
+   &[type="radio"]:disabled+.radio-button {
+      background-color: $gray-100;
+      border-color: $gray-100;
+      cursor: not-allowed;
+   }
+
+   /* Группировка radio buttons */
+   &[name="radioGroup"] {
+      display: none;
+   }
+}
