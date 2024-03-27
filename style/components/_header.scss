@@ -180,3 +180,52 @@
         }
     }
 }
+@media screen and (max-width: 412px){
+    .container{
+        max-width: 288px;
+    }
+    .header{
+        nav,
+        ul,
+        &__upper-info__item-dropdown,
+        &__upper-info__item,
+        &__upper-info__shop span{
+            display: none;
+        }
+        &__upper-container{
+            padding: 0px 18px;
+        }
+        &__upper{
+            padding: 5px 0px;
+        }
+        &__upper-info{
+            width: 100%;
+            justify-content: space-between;
+            &__item-burger{
+                cursor: pointer;
+                position: relative;
+                border-top: 2px solid #000000;
+                max-height: 12px;
+                align-self: center;
+                max-width: 20px;
+            }
+            &__item-burger::before{
+                content: "";
+                width: 12px;
+                height: 2px;
+                background-color: black;
+                display: inline-block;    
+                position: relative;
+            }
+            &__item-burger::after{
+                content: "";
+                width: 20px;
+                height: 2px;
+                bottom: 22px;
+                background-color: black;
+                display: inline-block;    
+                position: relative;
+            }
+        }
+    }
+}

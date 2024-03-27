@@ -773,3 +773,48 @@ input[name=radioGroup] {
   display: block;
   background-color: #F45D82;
 }
+
+@media screen and (max-width: 412px) {
+  .container {
+    max-width: 288px;
+  }
+  .header nav,
+  .header ul, .header__upper-info__item-dropdown, .header__upper-info__item, .header__upper-info__shop span {
+    display: none;
+  }
+  .header__upper-container {
+    padding: 0px 18px;
+  }
+  .header__upper {
+    padding: 5px 0px;
+  }
+  .header__upper-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header__upper-info__item-burger {
+    cursor: pointer;
+    position: relative;
+    border-top: 2px solid #000000;
+    max-height: 12px;
+    align-self: center;
+    max-width: 20px;
+  }
+  .header__upper-info__item-burger::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+  }
+  .header__upper-info__item-burger::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    bottom: 22px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+  }
+}
