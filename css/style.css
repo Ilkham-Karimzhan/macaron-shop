@@ -633,6 +633,9 @@ input[name=radioGroup] {
   display: flex;
   gap: 30px;
 }
+.header__upper-info__item-icon {
+  display: none;
+}
 .header__upper-info__item-dropdown, .header__upper-info__item {
   display: flex;
   align-items: center;
@@ -791,6 +794,9 @@ input[name=radioGroup] {
   .header__upper-info {
     width: 100%;
     justify-content: space-between;
+  }
+  .header__upper-info__item-icon {
+    display: block;
   }
   .header__upper-info__item-burger {
     cursor: pointer;

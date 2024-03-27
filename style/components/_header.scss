@@ -28,6 +28,9 @@
         &-info{
             display: flex;
             gap: 30px;
+            &__item-icon{
+                display: none;
+            }
             &__item-dropdown,
             &__item{
                 display: flex;
@@ -198,9 +201,13 @@
         &__upper{
             padding: 5px 0px;
         }
+        
         &__upper-info{
             width: 100%;
             justify-content: space-between;
+            &__item-icon{
+                display: block;
+            }
             &__item-burger{
                 cursor: pointer;
                 position: relative;
