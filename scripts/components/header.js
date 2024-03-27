@@ -31,7 +31,7 @@ customElements.define('mac-header', class MacButton extends HTMLElement { // com
 					</div>
 					<div class="header__upper-info__shop">
 					  <div class ="circle"><img src="./assets/icon/3.svg" alt=""></div>
-					  В корзине ( ${buyCounter}<style>.header__upper-info__shop div::after{content:"${buyCounter}";}</style> товара)
+					  В корзине ( ${buyCounter}<style>.header__upper-info__shop div::after{content:"${buyCounter}";}</style> ${buyCounter > 1 ? `товара` : `товар`})
 					</div>
 					<nav class="header__upper-info__item">
 					  <ul>
