@@ -22,14 +22,15 @@
 }
 
 input {
+
    /* Стили при активации */
    &[type="radio"]:checked+.radio-button {
       background-color: $font-white;
       border-color: $black-light;
-   
+
       /* Добавляем индикатор */
       position: relative;
-   
+
       &::after {
          content: "";
          position: absolute;
@@ -51,7 +52,7 @@ input {
    }
 
    /* Группировка radio buttons */
-   &[name="radioGroup"] {
+   &[id="myRadio"] {
       display: none;
    }
 }

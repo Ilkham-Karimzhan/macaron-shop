@@ -570,6 +570,10 @@ body {
   cursor: pointer;
   width: 20px;
   height: 20px;
+  /* Стили при наведении */
+}
+.custom-radio:hover .radio-button {
+  background-color: #ECEEF1;
 }
 
 /* Стили для радио кнопки */
@@ -581,12 +585,11 @@ body {
   border: 1px solid rgba(41, 41, 41, 0.1019607843);
 }
 
-/* Стили при наведении */
-.custom-radio:hover .radio-button {
-  background-color: #ECEEF1;
+input {
+  /* Стили при активации */
+  /* Стили для disabled состояния */
+  /* Группировка radio buttons */
 }
-
-/* Стили при активации */
 input[type=radio]:checked + .radio-button {
   background-color: #ffffff;
   border-color: rgba(41, 41, 41, 0.1019607843);
@@ -604,15 +607,100 @@ input[type=radio]:checked + .radio-button::after {
   border-radius: 50%;
   background-color: #e7426a;
 }
-
-/* Стили для disabled состояния */
 input[type=radio]:disabled + .radio-button {
   background-color: #F7F7F7;
   border-color: #F7F7F7;
   cursor: not-allowed;
 }
-
-/* Группировка radio buttons */
-input[name=radioGroup] {
+input[id=myRadio] {
   display: none;
+}
+
+footer {
+  background-color: #EBEDEE;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  margin-top: 0px;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 10% 140px 140px 140px;
+  grid-template-rows: 120px 120px;
+  gap: 10px;
+}
+
+.footer-info p {
+  text-align: center;
+}
+
+.footer-info img {
+  padding-left: 40%;
+}
+
+.footer-info-1 {
+  justify-items: center;
+  grid-column-start: 2;
+}
+
+.footer-info-2 {
+  justify-items: center;
+  grid-column-start: 3;
+}
+
+.footer-info-3 {
+  align-items: end;
+  grid-column-start: 4;
+}
+
+.footer-verif {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  padding-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links p {
+  margin: 0;
+}
+
+.footer-links-list {
+  width: 172px;
+}
+
+.footer-phone {
+  display: grid;
+  grid-template-columns: 165px;
+  grid-template-rows: 120px 80px;
+  margin-top: 0px;
+}
+
+.footer-phone a {
+  text-decoration: none;
+  -moz-tab-size: 18px;
+    -o-tab-size: 18px;
+       tab-size: 18px;
 }
